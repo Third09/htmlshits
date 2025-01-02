@@ -1,0 +1,346 @@
+body{
+  background-image: url(newbg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.nav-logo{
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.nav-logo-a{
+  font-style: none;
+  text-decoration: none;
+}
+.nav-logo img {
+  height: 70px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon-btn {
+  background-color: #682fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-btn.logout-icon {
+  background-color: #f65555;
+}
+
+.nav-links .icon-btn:hover {
+  transform: scale(1.1);
+  background-color: #ffbd59;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: auto;
+  margin-top: 100px;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: large;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+  border-right:3px solid #9632fe;
+
+}
+/* Darkmode Button */
+.darkmode-label {
+    width: 80px;  /* Increased width */
+    height: 30px; /* Increased height */
+    position: relative;
+    display: block;
+    background: linear-gradient(90deg, #ffbd59, #df8e14, #9d530f);
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 6px;
+    right: 20px;
+}
+
+.darkmode-label::after {
+    content: "";
+    width: 25px;  /* Adjusted for circle size */
+    height: 25px; /* Adjusted for circle size */
+    position: absolute;
+    top: 2.5px;   /* Centered vertically */
+    left: 2.5px;  /* Initial position */
+    background: #fff;
+    border-radius: 50%;  /* Made perfectly round */
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+input:checked + .darkmode-label {
+    background: linear-gradient(90deg, #3b1b74, #a159ff);
+}
+
+input:checked + .darkmode-label::after {
+    left: calc(100% - 2.5px);  /* Fixed position when checked */
+    transform: translateX(-100%);
+    background: #fff;
+}
+
+input:checked + .darkmode-label img {
+    opacity: 0;
+}
+
+input:checked + .darkmode-label img.sun {
+    opacity: 0;
+}
+
+input:checked + .darkmode-label img.moon {
+    opacity: 1;
+}
+
+.darkmode-label:active::after {
+    width: 35px;  /* Adjusted active state width */
+}
+
+/* Fixed icon positioning */
+.darkmode-label img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 7.5px;  /* Centered vertically */
+    left: 7.5px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.darkmode-label img.sun {
+    opacity: 1;
+}
+
+.darkmode-label img.moon {
+    right: 7.5px;
+    opacity: 0;
+}
+
+.darkmode-toggle input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+.comtext{
+  position: absolute;
+  left: 17.5%;
+  top: 11%;
+  margin-bottom: 10px;
+}
+
+
+.container{
+position: absolute;
+left: 15%;
+top: 15%;
+display: flex;
+justify-content:space-evenly; /* Adjust the space between the two boxes */
+align-items: flex-start;
+margin: 35px;
+padding: 20px;
+background-color: none;
+border-radius: 10px;
+width: 90%; /* Adjust container width as needed */
+max-width: 1200px;
+margin: 40px auto;
+border-radius: 15px;
+}
+
+
+
+.form-container {
+background-color: #ffffff;
+border-radius: 10px;
+padding: 30px;
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+width: 40%; /* Takes up half of the container space */
+text-align: center;
+box-shadow: 25px 20px 10px -3px #a159ff87;
+filter: drop-shadow(-9px -3px 21px #a159ff87);
+}
+
+
+
+.account-form h2 {
+  font-size: 2rem;
+  color: #3b1b74;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.form-groupid{
+  margin-right: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-groupgend{
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: left;
+}
+
+
+.form-container-label {
+  font-size: 0.9rem;
+  color: #666666;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.form-container input, select {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #a159ff;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.form-container-input::placeholder {
+  color: #bbbbbb;
+}
+
+.dob-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dob-container select {
+  width: 32%;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #a76bfa, #fc5cb9);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #fc5cb9, #a76bfa);
+}
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+.profile-card {
+margin-top: 7%;
+border-radius: 15px;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+text-align: center;
+width: 25%; /* Adjust width as needed */
+height: fit-content;
+padding: 20px;
+background-color: #ffffff; /* Set to solid white to remove gradient */
+box-shadow: 25px 20px 10px -3px #a159ff87;
+filter: drop-shadow(-9px -3px 21px #a159ff87);
+}
+.card {
+width: 100%;
+height: 100%;
+background-color: white;
+border-radius: 15px;
+border-color: #9632fe solid 5px;
+text-align: center;
+overflow: hidden;
+padding-bottom: 20px;
+position: relative;
+}
+
+
+.card img {
+width: 100%;
+height: 150px;
+object-fit:fill;
+border-radius: 50px;
+}
+.logo-container {
+width: 150px;
+height: 150px;
+background: linear-gradient(90deg, #d8e5f7, #9ca5bf ,#dddddd);
+border-radius: 50%;
+border: 15px solid #ffffff;
+position: absolute;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+filter: drop-shadow( 0px 5px 5px #a149d44e);
+}
+.logo-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.profile-info {
+color: #4a4a4a;
+margin-top: 20%;
+}
+
+.name {
+font-size: 1rem;
+color: #3b3b3b;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.id, .email, .dob, .gender {
+font-size: 1.5rem;
+margin: 5px 0;
+color: #555;
+}

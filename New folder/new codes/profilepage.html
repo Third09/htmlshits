@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="profilepage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://db.onlinewebfonts.com/c/83e4a6b639612cd501853be5a7cf97ab?family=Trend+Sans+One+Regular" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet">
+
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#"><img src="longlogo.png" alt="Org Connect Logo"></a>
+        </div>
+        <div class="nav-links">
+            <button class="icon-btn home-icon">
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+            </button>
+            <button class="icon-btn user-icon">
+                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            </button>
+            <button class="icon-btn follow-icon">
+                <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+            </button>
+            <button class="icon-btn notif-icon">
+                <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+            </button>
+            <input type="checkbox" class="darkmode-toggle" id="darkmode-toggle">
+            <label for="darkmode-toggle" class="darkmode-label">
+                <img src="images/earth-15-svgrepo-com.svg" class="sun" alt="Sun Icon">
+                <img src="images/earth-15-svgrepo-com.svg" class="moon" alt="Moon Icon">
+            </label>
+            <button class="icon-btn logout-icon" id="logout-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <a href="aboutus.html">About Us</a>
+        <a href="officers.html">Officers</a>
+        <a href="committeelist.html">Committee</a>
+        <a href="handledevents.html">Handled Events</a>
+        <a href="announcementlist.html">Announcements</a>
+    </div>
+
+
+    <div class="comtext">
+        <h1>USER PROFILE</h1>
+    </div>
+
+<div class="container">
+
+    <div class="form-container">
+        <form class="account-form">
+            <h2>Edit Account Details</h2>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="">
+            </div>
+            <div class="form-groupid">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" placeholder="">
+            </div>
+            <div class="form-groupgend">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="female" selected>Female</option>
+                    <option value="male">Male</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <div class="dob-container">
+                    <select id="dobMonth">
+
+                        <option value="january" selected>January</option>
+                        <option value="february" selected>February</option>
+                        <option value="march" selected>March</option>
+                        <option value="april" selected>April</option>
+                        <option value="may" selected>May</option>
+                        <option value="june" selected>June</option>
+                        <option value="july" selected>July</option>
+                        <option value="august" selected>August</option>
+                        <option value="september" selected>September</option>
+                        <option value="october" selected>October</option>
+                        <option value="november" selected>November</option>
+                        <option value="december" selected>December</option>
+                    </select>
+                    <select id="dobDay">
+                        <option value="1" selected>1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4" selected>4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6" selected>6</option>
+                        <option value="7" selected>7</option>
+                        <option value="8" selected>8</option>
+                        <option value="9" selected>9</option>
+                        <option value="10" selected>10</option>
+                        <option value="11" selected>11</option>
+                        <option value="12" selected>12</option>
+                        <option value="13" selected>13</option>
+                        <option value="14" selected>14</option>
+                        <option value="15" selected>15</option>
+                        <option value="16" selected>16</option>
+                        <option value="17" selected>17</option>
+                        <option value="18" selected>18</option>
+                        <option value="19" selected>19</option>
+                        <option value="20" selected>20</option>
+                        <option value="21" selected>21</option>
+                        <option value="22" selected>22</option>
+                        <option value="23" selected>23</option>
+                        <option value="24" selected>24</option>
+                        <option value="25" selected>25</option>
+                        <option value="26" selected>26</option>
+                        <option value="27" selected>27</option>
+                        <option value="28" selected>28</option>
+                        <option value="29" selected>29</option>
+                        <option value="30" selected>30</option>
+                        <option value="31" selected>31</option>
+                    </select>
+                    <select id="yearSelect">
+                    </select>
+                    <script>
+                        const select = document.getElementById('yearSelect');
+                        const currentYear = new Date().getFullYear();
+                    
+                        for (let year = 1970; year <= currentYear; year++) {
+                            const option = document.createElement('option');
+                            option.value = year;
+                            option.textContent = year;
+                            select.appendChild(option);
+                        }
+                    </script>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+
+
+<div class="profile-card">
+    <div class="card">
+        <img src="bggg.png" alt="Background Image">
+        <div class="logo-container">
+          <img src="orgs.png" alt="Placeholder Logo">
+        </div>
+
+    <div class="profile-info">
+        <h2 class="name" id="firstName" + id="lastName">MIKHAELA DELA CRUZ</h2>
+        <p class="id" id="studentId">23-2000</p>
+        <p class="email" id="email">Del**********@gmail.com</p>
+        <p class="dob">05 - 21 - 2003</p>
+        <p class="gender">Female</p>
+    </div>
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>

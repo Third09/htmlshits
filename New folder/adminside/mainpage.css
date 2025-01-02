@@ -1,0 +1,101 @@
+body{
+  background-image: url(newbg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.dashboard-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+
+  top: 20%;
+  width: 90%;
+  height: 70%;
+
+  margin-left: 5%;
+}
+
+/* Welcome Section */
+.welcome-container {
+  display: flex;
+  align-items: center;
+
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  padding: 50px;
+  width: 90%;
+  
+  margin-bottom: 20px;
+  
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.welcome-box {
+  flex: 1;
+}
+
+.welcome-box h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #462284;
+}
+
+.welcome-box p {
+  font-size: 1.5rem;
+  color: #3b1b74;
+}
+
+/* Button Grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: 90%;
+}
+
+.dashboard-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 90px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 200px;
+}
+
+.dashboard-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: #a135ff 10px solid;
+}
+
+.dashboard-button i{
+ font-size: 2.5rem;
+}
+
+
+.dashboard-button span {
+  font-size: 16px;
+  color: #4c4cfc;
+  font-weight: bold;
+}

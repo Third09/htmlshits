@@ -1,0 +1,139 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(images/newbg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 50px;
+}
+
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-left: 550px;
+    
+}
+
+.btn {
+    border: 2px solid #8c4cfb;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: .8rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background: transparent;
+    width: 250px;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    
+
+}
+
+.list-orgs {
+    color: black;
+}
+    
+
+.newsfeed {
+    background: linear-gradient(to right, #832eff, #fe4ff2);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 50px;
+    
+    
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.search-icon {
+    border: none;
+    background: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Icons */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 50px;
+}
+
+.icon-btn {
+    background-color: #682fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.logout-icon {
+    background-color: #f65555;
+}
+
+.nav-links .icon-btn:hover {
+    background-color: #682fff;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px #a149d4;
+}
+
+.nav-links .logout-icon:hover {
+    background-color: #f65555;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px #a149d4;
+}
+
+.theme-toggle {
+    background: linear-gradient(to right, #ffcd85, #ff9d2f);
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+}
